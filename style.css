@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(185, 183, 183);
+}
+
+header, footer {
+    display: flex;
+    color: white;
+    background-color: rgb(93, 84, 84);
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding: 10px;
+    margin: 10px;
+}
