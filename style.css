@@ -1,14 +1,45 @@
 body {
     background-color: rgb(185, 183, 183);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
 }
 
-header, footer {
+/* navigation bar */
+
+.navbar {
     display: flex;
-    color: white;
-    background-color: rgb(93, 84, 84);
-    justify-content: center;
+    background-color: rgb(104, 101, 101);
     align-items: center;
-    font-size: x-large;
-    padding: 10px;
-    margin: 10px;
+    border-bottom: solid 1px white;
+    box-shadow: 0 0 10px black;
 }
+
+
+.header-logo img {
+    height: auto;
+    width: 150px;
+    margin-right: auto;
+    padding: 10px 5px 10px 60px;
+}
+
+.header-link {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 0 25px 0 0;
+}
+
+.header-link a:hover {
+    text-shadow: 0 0 5px black;
+    cursor: grab;
+    color: rgb(226, 226, 136);
+    text-shadow: black;
+  }
