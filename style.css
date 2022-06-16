@@ -1,22 +1,26 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(185, 183, 183);
     display: flex;
     flex-direction: column;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 /* navigation bar */
 
 .navbar {
     display: flex;
-    background-color: rgb(104, 101, 101);
+    background-color: black;
     align-items: center;
     border-bottom: solid 1px white;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px whitesmoke;
+    position: fixed;
+    width: 100%;
 }
-
 
 .header-logo img {
     height: auto;
@@ -35,11 +39,79 @@ body {
     color: white;
     font-size: 25px;
     padding: 0 25px 0 0;
+    display: block;
 }
 
 .header-link a:hover {
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 5px ;
     cursor: grab;
-    color: rgb(226, 226, 136);
-    text-shadow: black;
+    color: rgb(242, 242, 154);
   }
+
+  /* introduction section */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid black 1px;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px black;
+    box-shadow: 0 0 50px black;
+    background: rgba(255, 255, 255, 0.65);  /* adding alpha at end of rgb allows to specify opacity of just background and not text */
+    color: black;
+    margin: 20px;
+    height: 500px;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.buyer-list {
+    list-style-image: url(images/key.svg);
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.contact a {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+}
+
+.contact a:hover {
+    cursor: grab;
+    background-color: rgb(113, 19, 19);
+    color: white;
+    border-radius: 10%;
+}
+
+.heading-pic img {
+    border-radius: 10%;
+    border: solid black;
+    box-shadow: 0 0 50px black;
+    width: 300px;
+    height: auto;
+    border: solid black;
+    margin: 50px 50px 5px 0; 
+}
+
+.bio {
+    border-radius: 10%;
+    border: solid black;
+    box-shadow: 0 0 50px black;
+    margin: 5px 50px 10px 0;
+    border: solid black;
+    padding: 0 5px 5px 10px;
+}
