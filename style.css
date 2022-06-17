@@ -54,16 +54,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid black 1px;
-    background-image: url(images/background.jpg);
+    border-bottom: solid white 1px;
+    background-image: url(images/backgrounds.jpg);
     background-size: cover;
     background-position: center;
     height: 800px;
 }
 
-.heading {
+.left-box {
     display: flex;
     flex-direction: column;
+    flex-flow: column wrap;
     border: solid 2px black;
     box-shadow: 0 0 50px black;
     background: rgba(255, 255, 255, 0.65);  /* adding alpha at end of rgb allows to specify opacity of just background and not text */
@@ -92,7 +93,7 @@ body {
 
 .contact a:hover {
     cursor: grab;
-    background-color: rgb(113, 19, 19);
+    background-color: rgb(232, 229, 31);
     color: white;
     border-radius: 10%;
 }
@@ -101,17 +102,86 @@ body {
     border-radius: 10%;
     border: solid black;
     box-shadow: 0 0 50px black;
-    width: 300px;
+    width: 400px;
     height: auto;
     border: solid black;
     margin: 50px 50px 5px 0; 
+    flex-flow: row wrap;
 }
 
 .bio {
     border-radius: 10%;
     border: solid black;
+    background: rgba(255, 255, 255, 0.65);
     box-shadow: 0 0 50px black;
     margin: 5px 50px 10px 0;
     border: solid black;
     padding: 0 5px 5px 10px;
+    text-align: center;
+}
+
+/* listings section */
+
+.featured {
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    border: solid whitesmoke 3px;
+    box-shadow: 0 0 5px gray;
+}
+
+.listings {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    background: linear-gradient(0.25turn, rgb(26, 25, 25), rgb(168, 137, 137), beige);
+    text-align: center;
+    justify-content: center;
+    height: 370px;
+}
+
+.home {
+    box-shadow: 0 0 5px white;
+    background-color: white;
+    height: 300px;
+    width: 320px;
+    margin: 35px 10px 35px 10px;
+    
+}
+
+.home-icon {
+    height: 200px;
+    width: auto;
+    margin: 10px 10px 5px 10px;
+}
+
+/* testimonial section */
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.testimonial-body {
+    padding: 40px 150px 40px 150px;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-body p {
+    text-align: right;
+    justify-content: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 50px 0 0;
+    color: rgb(163, 142, 80);
 }
