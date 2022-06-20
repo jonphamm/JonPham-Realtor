@@ -17,7 +17,7 @@ body {
     background-color: black;
     align-items: center;
     border-bottom: solid 1px white;
-    box-shadow: 0 0 10px whitesmoke;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
     position: fixed;
     width: 100%;
 }
@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     flex-flow: column wrap;
     border: solid 2px black;
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 40px black;
     background: rgba(255, 255, 255, 0.65);  /* adding alpha at end of rgb allows to specify opacity of just background and not text */
     color: black;
     margin: 20px;
@@ -101,7 +101,7 @@ body {
 .heading-pic img {
     border-radius: 10%;
     border: solid black;
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 40px black;
     width: 400px;
     height: auto;
     border: solid black;
@@ -113,7 +113,7 @@ body {
     border-radius: 10%;
     border: solid black;
     background: rgba(255, 255, 255, 0.65);
-    box-shadow: 0 0 50px black;
+    box-shadow: 0 0 40px black;
     margin: 5px 50px 10px 0;
     border: solid black;
     padding: 0 5px 5px 10px;
@@ -184,4 +184,68 @@ body {
     font-weight: bold;
     margin: 10px 50px 0 0;
     color: rgb(163, 142, 80);
+}
+
+/* contact section */
+
+.contact-section {
+    display: flex;
+    background-color: rgb(126, 120, 77);
+    justify-content: center;
+}
+
+.contact-box {
+    display: flex;
+    border: solid 5px black;
+    border-radius: 40px;
+    background-color: rgb(189, 180, 128);
+    margin: 100px;
+    padding: 50px;
+    align-items: center;
+}
+
+.contact-text h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 3px black;
+    font-size: 30px;
+}
+
+.contact-text p {
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+.contact-button {
+    color: rgb(0, 0, 0);
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+    border: double 5px black;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.contact-button:hover {
+    background-color: rgb(252, 115, 41);
+    font-weight: 800;
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+}
+
+/* footer section */
+
+.footer {
+    display: flex;
+    background-color: black;
+    border-top: solid 1px white;
+    box-shadow: 0 0 5px black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
 }
