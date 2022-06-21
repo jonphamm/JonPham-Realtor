@@ -8,6 +8,8 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    overflow-y: scroll;
+    overflow-x: auto;
 }
 
 /* navigation bar */
@@ -47,3 +49,37 @@ body {
     cursor: grab;
     color: rgb(242, 242, 154);
   }
+
+/* contact section */
+
+.container {
+    display: flex;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item {
+    justify-content: center;
+    
+    flex-direction: column;
+}
+
+
+
+
+
+
+  /* footer section */
+
+.footer {
+    display: flex;
+    background-color: black;
+    border-top: solid 1px white;
+    box-shadow: 0 0 5px black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
