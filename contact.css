@@ -58,16 +58,32 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
 }
 
-.item {
+h1 {
+    text-shadow: 2px 2px 0px rgb(255, 255, 255);
+}
+
+.contact-section {
     justify-content: center;
-    
     flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    width: 600px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.65);
+    padding: 20px; 
+    display: flex;
+    font-size: 20px;
 }
 
-
-
+.first-name {
+    color: aqua;
+}
 
 
 
