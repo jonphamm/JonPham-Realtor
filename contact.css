@@ -48,6 +48,8 @@ body {
     text-shadow: 0 0 5px ;
     cursor: grab;
     color: rgb(242, 242, 154);
+    transform: scale(1.2);
+    transition: 100ms;
   }
 
 /* contact section */
