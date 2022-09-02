@@ -34,6 +34,7 @@ body {
 .header-link {
     display: flex;
     margin-left: auto;
+    transition: 100ms;
 }
 
 .header-link a {
@@ -48,6 +49,8 @@ body {
     text-shadow: 0 0 5px ;
     cursor: grab;
     color: rgb(242, 242, 154);
+    transform: scale(1.2);
+    transition: 100ms;
   }
 
   /* introduction section */
@@ -101,6 +104,8 @@ body {
     cursor: grab;
     background-color: rgb(32, 26, 121);
     color: white;
+    transition: 100ms;
+    transform: scale(1.2);
 }
 
 .heading-pic img {
@@ -241,6 +246,8 @@ body {
     cursor: pointer;
     border-color: rgb(255, 255, 255);
     color: white;
+    transform: scale(1.2);
+    transition: 100ms;
 }
 
 /* footer section */
@@ -254,4 +261,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 24px;
+}
+
+@media (min-width: 500px) {
+    body {
+        display: flex;
+        height: 100%;
+    }
 }
