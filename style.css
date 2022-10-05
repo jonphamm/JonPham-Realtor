@@ -63,6 +63,7 @@ body {
     background-image: url(images/backgrounds.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 800px;
     flex: auto;
 }
